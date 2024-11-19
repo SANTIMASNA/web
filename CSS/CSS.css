@@ -1,0 +1,936 @@
+/* General para el nav */
+nav {
+    background-color: black;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+/* Estilos para la lista y los elementos del menú */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Ocultar los elementos en pantallas pequeñas */
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Hover: solo cambia el color del texto */
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Botón del menú móvil */
+.menu-icon {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Menú móvil: aparece el ícono y oculta la lista */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: black; /* Fondo negro también para el menú desplegable */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%; /* Asegura que el menú ocupe todo el ancho */
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* Evita que haya márgenes fuera del nav */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fondo general negro */
+}
+
+/**************************************************************************/
+body {
+    margin: 0;
+    font-family: Arial;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    border-bottom: 2px solid #444;
+}
+
+
+.logo img{
+    display: block;
+    width: 135px;
+    height: 100px;
+}
+
+/*CARRITO DE COMPRAS*/
+
+.carrito-compras{
+    font-size: 2em; /* Tamaño del ícono */
+    margin-left: 1600px; /* Distancia hacia la derecha del buscador */
+    color: #007bff; /* Color azul por defecto */
+    transition: transform 0.3s, color 0.3s;
+    position: relative;
+    top: -20px;
+}
+
+.carrito-compras:hover{
+    transform: scale(1.2); /* Efecto de agrandar al pasar el mouse */
+    color: #ff5733;
+}
+
+.buscador form{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.buscador input[type="text"]{
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 500px;
+}
+
+.buscador input[type="submit"]{
+    padding: 7px 7px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.buscador input[type="submit"]:hover{
+    background-color: #575757;
+    color: white
+}
+
+.nav-bar{
+    background: #333;
+    padding: 10px 20px;
+    margin: 0;
+    border: 2px solid #444;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li{
+    margin: 0 10px;
+}
+
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar ul li a:hover{
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/*PARA EL LOGO DE ARRIBA*/
+
+.linea{
+    color: white;
+}
+.cabecera{
+    color: white;
+}
+
+/*PARA LA PORTADA*/
+
+.portada {
+    width: 100%;
+    background: url(../Img/principalv1.jpeg) center center;
+    background-size: cover;
+    height: 10%;
+}
+
+/*SEGUNDA IMAGEN*/
+.separador {
+    border-top: 20px solid black;
+    margin: 0 0;
+}
+
+.sticker {
+    display: flex;
+    justify-content: center;
+    margin: 0.2%;
+}
+
+.sticker img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+/*CARRUSEL*/
+.carousel-item img {
+    max-height: 500px; /* Ajusta este valor según tus necesidades */
+    width: 100%;
+    object-fit: cover; /* Recorta la imagen proporcionalmente sin distorsión */
+}
+
+
+/*PARA LOS PRODUCTOS*/
+
+.descripcion {
+    font-size: 150%;
+    color: #15C2B5;
+    font-weight: bold;
+    padding: 1px 10px 10px 5px;
+}
+
+.btn-detalle {
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #15C2B5;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-detalle:hover {
+    background-color: #15C2B5;
+    color: white;
+}
+
+.columna {
+    background: #E5E1E1;
+    color: #333;
+    border: 2px solid #333;
+    margin: 80px 2.5%;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888;
+    width: 30%;
+    box-sizing: border-box;
+
+}
+
+.columna img {
+    margin-top: 70px;
+    max-width: 85%;
+
+}
+
+.columna img:hover{
+    -webkit-transform:scale(1.17);
+    transform:scale(1.17);
+}
+.texto-body{
+    margin-bottom: 0px;
+    padding: 1%;
+    text-align: center;  /* Alinea a la izquierda */
+    font-size: 20px;   /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+
+.container {
+    margin: 0;
+    width: 90%;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 17.8%;
+    margin-top: -200px;
+    gap: 15px;
+}
+
+.texto-center {
+    text-align: center;
+}
+
+h2{
+    font-family: "Playwrite CU", cursive;
+    letter-spacing: 2px;
+}
+h3{
+    font-family: "Playwrite CU", cursive;
+    letter-spacing: 2px;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+}
+p{
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 2px;
+}
+
+.btn-detalle {
+    background-color: #007bff; /* Cambia el color de fondo */
+    color: #ffffff; /* Cambia el color del texto */
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    text-decoration: none; /* Quita el subrayado */
+    transition: background-color 0.3s; /* Transición suave para el color */
+}
+
+.btn-detalle:hover {
+    background-color: #00cc99; /* Color al pasar el mouse */
+    text-decoration: none;
+}
+
+.carrusel-texto {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #0056b3, -1px -1px 0 #0056b3, 1px -1px 0 #0056b3, -1px 1px 0 #0056b3;   
+}
+
+.newsletter-contenedor{
+    background: url('../Img/171264809-56a9f6985f9b58b7d0003992-222b09549e304d3989a4a73ae26d96f2.jpg') center center;
+    background-size: cover;
+    height:600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.newsletter-caja {
+    background: #2c3e50;
+    padding: 120px 60px;
+    border-radius: 50px 0 0 50px;
+    color: #fff;
+}
+
+.newsletter-caja h1{
+    font-size: 40px;
+    margin: 0 0 20px;
+}
+.newsletter-caja input[type="email"]{
+    width: 80%;
+    height: 50px;
+    float:left;
+    font-family: arial;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 15px;
+    line-height: 30px;
+    border: 2px solid transparent;
+    border-radius: 8px 0 0 8px;
+}
+.newsletter-caja input[type="email"]:focus{
+    border-color: #178e49;
+}
+.newsletter-caja input[type="submit"]{
+    width: 120px;
+    height: 50px;
+    float: left;
+    font-family: arial;
+    font-size:16px;
+    font-weight: 700;
+    font-size: 18px;
+    color:#000;
+    background: #178e49;
+    padding: 10px 15px;
+    line-height: 30px;
+    border: 2px solid transparent;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.newsletter-caja input[type="submit"]:hover{
+    background: #0e6432;
+    color: #fff;
+}
+/*PARA LOS MENSAJES*/
+
+.nosotros {
+    padding: 30px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.nosotros h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.nosotros h3 {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nosotros p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    display: inline-block;
+    text-align: center;
+    max-width: 80%;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+
+/*PARA LA "TABLE"*/
+
+.table-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.table-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*PARA EL REGISTRO*/
+
+
+
+footer{
+    background-color: #111;
+}
+.footer-Contenedor{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerAbajo{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerAbajo p{
+    color: white;
+}
+.editor{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media(max-width:700px){
+    nav{
+        background:#5EAE0E;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0; /*arriba y abajo será de 10px e izquierda y derecha será de 0 */
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color: #24262b;
+}
+.footer-container{
+    max-width: 1170px;
+    margin:auto;
+    padding: 2%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 33.3%;
+    padding: 0 15px;
+}
+.footer-col h3{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h3::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-texto{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.socialIcons{
+    display: flex;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerAbajo{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerAbajo p{
+    color: white;
+}
+.editor{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media(max-width:700px){
+    nav{
+        background:#5EAE0E;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0; /*arriba y abajo será de 10px e izquierda y derecha será de 0 */
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+        width: 50%;
+    }
+
+}
+@media (max-width: 1200px) {
+    .columna {
+        width: calc(50% - 20px); /* Dos columnas */
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .buscador input[type="text"] {
+        width: 100%;
+    }
+
+    .columna {
+        width: calc(100% - 20px); /* Una columna */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-bar ul li {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+    nav{
+        background:#5EAE0E;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0; /*arriba y abajo será de 10px e izquierda y derecha será de 0 */
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .carrito {
+        max-width: 100%;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    /* Asegura que el botón de compra y otros elementos no se desborden */
+    .carrito .total {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .carrito-compras {
+        margin-left: 0;
+        position: relative;
+        top: 0;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-bar ul li {
+        margin: 10px 0;
+    }
+
+    .cuponera {
+        min-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .cuponera input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .head {
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 90px;
+    }
+
+    .cuponera {
+        max-width: 80%;
+    }
+
+    .footer-col {
+        width: 50%;
+    }
+}
+
+
+
+
+
+@media(max-width:700px){
+    nav{
+        background:#5EAE0E;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0; /*arriba y abajo será de 10px e izquierda y derecha será de 0 */
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+        width: 50%;
+    }
+
+}
+@media (max-width: 1200px) {
+    .columna {
+        width: calc(50% - 20px); /* Dos columnas */
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .buscador input[type="text"] {
+        width: 100%;
+    }
+
+    .columna {
+        width: calc(100% - 20px); /* Una columna */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-bar ul li {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+/* Tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carrito {
+        max-width: 85%;
+        margin: 20px auto;
+        padding: 20px;
+        
+    }
+
+    .carrito .total {
+        font-size: 20px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1025px) {
+    .carrito {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 30px;
+    }
+
+    .carrito .total {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Verano</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/CSSverano.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="/Ejm1/public_html/Img/logochaki.png" type="img/png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <script src="JS/hamburguesa.js"></script>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#nosotros-id">Acerca de nosotros</a></li>
+                <li><a href="Registro.html">Registrate</a></li>
+                <li><a href="Cuponera.html">Cuponera</a></li>
+                <li><a href="index.html">ChaskisPlus</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <img src="Img/Black and Cyan Blue Simple Game Animated Logo (3).gif" alt="Logo de la empresa" />
+                </div>
+                <div class="buscador">
+                    <form action="busqueda-productos">
+                        <input type="text">
+                        <input type="submit" value="Buscar">
+                    </form>
+                    
+                    <a class="carrito-compras" href="#carrito" title="Carrito de compras">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <i class="fa-solid fa-sun"></i><h2>VERANO</h2>
+            </section>
+            <div class="contenido">
+                <aside class="filtro">
+                    <h2>Filtros</h2>
+                    <h3>Categoría</h3>
+                    <ul>
+                        <li><input type="checkbox"> Sandalias Orgánicas</li>
+                        <li><input type="checkbox"> Sandalias de Cuero</li>
+                        <li><input type="checkbox"> Sandalias Deportivas</li>
+                    </ul>
+                    <h3>Tamaño</h3>
+                    <ul>
+                        <li><input type="checkbox"> S</li>
+                        <li><input type="checkbox"> M</li>
+                        <li><input type="checkbox"> L</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <ul>
+                        <li><input type="checkbox"> Menos de S/40</li>
+                        <li><input type="checkbox"> S/40 - S/60</li>
+                        <li><input type="checkbox"> Más de S/60</li>
+                    </ul>
+                </aside>
+                <section class="productos">
+                    <div class="producto">
+                        <img src="ImgVerano/V1.jpeg" alt=""/>
+                        <h2>Flor de los Andes</h2>
+                        <p class="descripcion">Sandalias con un diseño floral 
+                            inspirado en las flores silvestres de los Andes peruanos. 
+                            Los colores vibrantes y los patrones detallados evocan la belleza natural de la región</p>
+                        <br>
+                        <button>Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="ImgVerano/V2.jpeg" alt=""/>
+                        <h2>Fiesta de Verano</h2>
+                        <p class="descripcion">Inspiradas en las festividades veraniegas peruanas, estas sandalias presentan 
+                            un vibrante mosaico de colores y formas. Los patrones festivos y los tonos alegres reflejan la energía y 
+                            la alegría de las celebraciones culturales</p>
+                        <br><br><br><br>
+                        <button>Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="ImgVerano/V3.jpeg" alt=""/>
+                        <h2>Cielo Andino</h2>
+                        <p class="descripcion">Sandalias con un diseño que captura los colores del cielo despejado en los Andes durante el verano. 
+                            Los tonos celestes y blancos se mezclan en patrones suaves que evocan la serenidad de las alturas</p>
+                        <br>
+                        <button>Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="ImgVerano/V4.jpeg" alt=""/>
+                        <h2>Flores Tropicales</h2>
+                        <p class="descripcion">Sandalias adornadas con flores tropicales, representando la exuberante flora de la selva peruana. 
+                            Los colores vivos y los detalles florales aportan un toque de alegría y vitalidad</p>
+                        <br><br><br><br>
+                        <button>Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="ImgVerano/V5.jpeg" alt=""/>
+                        <h2>Brisa Marina</h2>
+                        <p class="descripcion">Sandalias con un diseño inspirado en las olas y la brisa del mar peruano. Los tonos azules
+                            y blancos, junto con patrones ondulados, evocan la frescura y tranquilidad de las playas peruanas</p>
+                        <br><br><br><br>
+                        <button>Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="ImgVerano/V6.jpeg" alt=""/>
+                        <h2>Sol de Verano</h2>
+                        <p class="descripcion">Este diseño presenta un patrón radiante que refleja la intensidad del sol de verano en Perú. 
+                            Los colores amarillos y naranjas brillantes transmiten calidez y energía</p>
+                        <br>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <section class="carrusel-descuentos">
+            <h2>Productos en Descuento</h2>
+            <div class="carrusel">
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V7.jpeg" alt=""/>
+                    <p>Oasis de Verano</p>
+                    <p class="precio-original">S/40.00</p>
+                    <p class="precio-descuento">S/30.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V8.jpeg" alt=""/>
+                    <p>Verano animalístico</p>
+                    <p class="precio-original">S/55.00</p>
+                    <p class="precio-descuento">S/35.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V9.jpeg" alt=""/>
+                    <p>Río Amazonas</p>
+                    <p class="precio-original">S/78.00</p>
+                    <p class="precio-descuento">S/60.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V7.jpeg" alt=""/>
+                    <p>Oasis de Verano</p>
+                    <p class="precio-original">S/40.00</p>
+                    <p class="precio-descuento">S/30.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V8.jpeg" alt=""/>
+                    <p>Verano animalístico</p>
+                    <p class="precio-original">S/55.00</p>
+                    <p class="precio-descuento">S/35.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V9.jpeg" alt=""/>
+                    <p>Río Amazonas</p>
+                    <p class="precio-original">S/78.00</p>
+                    <p class="precio-descuento">S/60.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V7.jpeg" alt=""/>
+                    <p>Oasis de Verano</p>
+                    <p class="precio-original">S/40.00</p>
+                    <p class="precio-descuento">S/30.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V8.jpeg" alt=""/>
+                    <p>Verano animalístico</p>
+                    <p class="precio-original">S/55.00</p>
+                    <p class="precio-descuento">S/35.00</p>
+                </div>
+                <div class="producto-descuento">
+                    <img src="ImgVerano/V9.jpeg" alt=""/>
+                    <p>Río Amazonas</p>
+                    <p class="precio-original">S/78.00</p>
+                    <p class="precio-descuento">S/60.00</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Contáctanos</h3>
+                        <ul>
+                            <li class="footer-texto">Av. Fundo La Estrella N° 8648</li>
+                            <li class="footer-texto">Teléfono 989455212</li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Nuestros Servicios</h3>
+                        <ul>
+                            <li><a href="#">Trabaja con Nosotros</a></li>
+                            <li><a href="#">Distribuidores</a></li>
+                            <li><a href="#">Opciones de Pago</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Síguenos</h3>
+                        <div class="socialIcons">
+                            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@chasquiplus"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerAbajo">
+                <p>Diseñado por <span class="editor">☑Jacintas</span></p>
+            </div>
+        </footer>
+    </body>
+</html>

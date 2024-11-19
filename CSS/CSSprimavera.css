@@ -1,0 +1,577 @@
+/* General para el nav */
+nav {
+    background-color: black;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+/* Estilos para la lista y los elementos del menú */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Ocultar los elementos en pantallas pequeñas */
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Hover: solo cambia el color del texto */
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Botón del menú móvil */
+.menu-icon {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Menú móvil: aparece el ícono y oculta la lista */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: black; /* Fondo negro también para el menú desplegable */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%; /* Asegura que el menú ocupe todo el ancho */
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* Evita que haya márgenes fuera del nav */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/**************************************************************************/
+body {
+    margin: 0;
+    font-family: Arial;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    border-bottom: 2px solid #444;
+}
+
+.nav-enlacemarca{
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 2px;
+}
+.logo img{
+    display: block;
+    width: 135px;
+    height: 100px;
+}
+
+/*CARRITO DE COMPRAS*/
+
+
+.carrito-compras{
+    font-size: 2em; /* Tamaño del ícono */
+    margin-left: 1600px; /* Distancia hacia la derecha del buscador */
+    color: #007bff; /* Color azul por defecto */
+    transition: transform 0.3s, color 0.3s;
+    position: relative;
+    top: -20px;
+}
+
+.carrito-compras:hover{
+    transform: scale(1.2); /* Efecto de agrandar al pasar el mouse */
+    color: #ff5733;
+}
+
+
+
+.buscador form{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.buscador input[type="text"]{
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 500px;
+}
+
+.buscador input[type="submit"]{
+    padding: 7px 7px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.buscador input[type="submit"]:hover{
+    background-color: #575757;
+    color: white
+}
+
+.nav-bar{
+    background: #333;
+    padding: 10px 20px;
+    margin: 0;
+    border: 2px solid #444;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li{
+    margin: 0 10px;
+}
+
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar ul li a:hover{
+    background-color: #575757;
+    border-radius: 5px;
+}
+.linea{
+    color: white;
+}
+.cabecera{
+    color: white;
+    font-family: "Exo 2", sans-serif;
+}
+h2{
+    font-family: "Playwrite CU", cursive;
+    letter-spacing: 2px;
+}
+h3{
+    font-family: "Playwrite CU", cursive;
+    letter-spacing: 2px;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+}
+p{
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 2px;
+}
+footer{
+    background-color: #111;
+}
+.footer-Contenedor{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerAbajo{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerAbajo p{
+    color: white;
+}
+.editor{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media(max-width:700px){
+    nav{
+        background:#5EAE0E;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0; /*arriba y abajo será de 10px e izquierda y derecha será de 0 */
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color: #24262b;
+}
+.footer-container{
+    max-width: 1170px;
+    margin:auto;
+    padding: 2%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 33.3%;
+    padding: 0 15px;
+}
+.footer-col h3{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h3::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-texto{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.socialIcons{
+    display: flex;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerAbajo{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerAbajo p{
+    color: white;
+}
+.editor{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media(max-width:700px){
+    nav{
+        background:#5EAE0E;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin:10px 0; /*arriba y abajo será de 10px e izquierda y derecha será de 0 */
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+        width: 50%;
+    }
+
+}
+
+
+
+/*BANNER*/
+
+/* Sección de Banner */
+.banner {
+    display: grid;
+    place-items: center; /* Centra la imagen del banner */
+    margin: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-brands {
+    font-size: 40px; /* Ajusta el tamaño según tus preferencias */
+    color: green; /* Cambia el color si lo deseas */
+}
+
+/* Contenido principal */
+.contenido {
+    display: flex; /* Usa flexbox para el diseño de contenido */
+}
+
+/* Sección de Filtro */
+.filtro {
+    width: 250px; /* Ancho fijo para el filtro */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.filtro h2 {
+    margin-top: 0;
+}
+
+.filtro ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Sección de Productos */
+.productos {
+    display: grid; /* Activa Grid Layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crea columnas responsivas */
+    gap: 30px; /* Espacio entre productos */
+    padding: 20px;
+    flex-grow: 1; /* Permite que la sección de productos ocupe el espacio restante */
+}
+
+.producto {
+    font-family: 'Protest Strike', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px; /* Aumenta el padding para un cuadro más grande */
+    text-align: center;
+    transition: transform 0.3s; /* Transición suave para el hover */
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.descripcion {
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.carrusel-descuentos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Carrusel de productos con descuentos que ocupa todo el ancho */
+.carrusel-descuentos {
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 120px; /* Añade espacio en blanco debajo del carrusel */
+}
+
+.carrusel {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    animation: mover 7s linear infinite; /* Ajustamos la velocidad de la animación */
+}
+
+.producto-descuento {
+    min-width: 300px; /* Ancho mínimo de cada producto */
+    text-align: center;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+.producto-descuento img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animación continua para mover el carrusel de izquierda a derecha */
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Estilo de los productos con descuento */
+.precio-original {
+    text-decoration: line-through;
+    color: red;
+}
+
+.precio-descuento {
+    font-weight: bold;
+    color: green;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+    }
+
+    .producto-descuento {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+    }
+
+    .producto-descuento {
+        min-width: 100px;
+    }
+}

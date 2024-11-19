@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>www.chaskisplus.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/CSSCuponera.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="/Ejm1/public_html/Img/logochaki.png" type="img/png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <script src="JS/hamburguesa.js"></script>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                
+                <li><a href="Registro.html">Registrate</a></li>
+                <li><a href="Cuponera.html">Cuponera</a></li>
+                <li><a href="index.html">ChaskisPlus</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <img src="Img/Black and Cyan Blue Simple Game Animated Logo (3).gif" alt="Logo de la empresa" />
+                </div>
+                <div class="buscador">
+                    <form action="busqueda-productos">
+                        <input type="text">
+                        <input type="submit" value="Buscar">
+                    </form>
+
+                    <a class="carrito-compras" href="#carrito" title="Carrito de compras">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+        </header>
+        <br>
+        <div class="cuponera">
+            <h2>Cuponera</h2>
+            <div>
+                <input type="text" id="codigoCupon" placeholder="Ingresa tu código de cupón">
+                <button id="btnAgregarCupon">Aceptar</button>
+            </div>
+            <div id="mensajeError" class="mensaje-error"></div> <!-- Mensaje de error -->
+            <div class="cupones-lista" id="cuponesLista"></div>
+        </div>
+
+        <script src="JS/JSCuponera.js" type="text/javascript"></script>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Contáctanos</h3>
+                        <ul>
+                            <li class="footer-texto">Av. Fundo La Estrella N° 8648</li>
+                            <li class="footer-texto">Teléfono 989455212</li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Nuestros Servicios</h3>
+                        <ul>
+                            <li><a href="#">Trabaja con Nosotros</a></li>
+                            <li><a href="#">Distribuidores</a></li>
+                            <li><a href="#">Opciones de Pago</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Síguenos</h3>
+                        <div class="socialIcons">
+                            <a href="https://www.facebook.com/share/gERL2XsjC5wwwpQF/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/chasquisplus"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@chasquiplus"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerAbajo">
+                <p>Diseñado por <span class="editor">☑Jacintas</span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>
