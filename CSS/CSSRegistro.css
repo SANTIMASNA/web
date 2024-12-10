@@ -113,25 +113,22 @@ header {
     height: 100px;
 }
 
-.carrito-compras{
-    font-size: 2em; /* Tamaño del ícono */
-    margin-left: 1600px; /* Distancia hacia la derecha del buscador */
-    color: #007bff; /* Color azul por defecto */
-    transition: transform 0.3s, color 0.3s;
-    position: relative;
-    top: -20px;
+.carrito img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    margin-top: auto;
 }
 
-.carrito-compras:hover{
-    transform: scale(1.2); /* Efecto de agrandar al pasar el mouse */
-    color: #ff5733;
+.carrito {
+    position: absolute;
+    right: 10px;
+    top: auto;
 }
 
 .buscador form{
     display: flex;
     align-items: center;
-    position: relative;
-    top: 20px;
 }
 
 .buscador input[type="text"]{

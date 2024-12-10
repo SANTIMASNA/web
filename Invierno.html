@@ -38,15 +38,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <img src="Img/Black and Cyan Blue Simple Game Animated Logo (3).gif" alt="Logo de la empresa" />
                 </div>
                 <div class="buscador">
-                    <form action="busqueda-productos">
-                        <input type="text">
-                        <input type="submit" value="Buscar">
-                    </form>
                     
+
                     <a class="carrito-compras" href="#carrito" title="Carrito de compras">
                         <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count">0</span> <!-- Mostrará el número de productos en el carrito -->
                     </a>
-                    
+
                 </div>
             </div>
         </header>
@@ -78,53 +76,52 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </aside>
                 <section class="productos">
                     <div class="producto">
-                        <img src="ImgInvierno/I1.jpeg" alt=""/>
+                        <img src="ImgInvierno/I1.jpeg" alt="Invierno en Cusco"/>
                         <h2>Invierno en Cusco</h2>
-                        <p class="descripcion">Inspiradas en la ciudad de Cusco durante el invierno, estas sandalias presentan un diseño con tonos
-                            cálidos y detalles geométricos que reflejan la arquitectura y el ambiente acogedor de la región</p>
-                        <br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Inspiradas en la ciudad de Cusco durante el invierno, estas sandalias presentan un diseño con tonos cálidos y detalles geométricos que reflejan la arquitectura y el ambiente acogedor de la región</p>
+                        <button class="add-to-cart" data-name="Invierno en Cusco" data-price="25.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgInvierno/I2.jpeg" alt=""/>
+                        <img src="ImgInvierno/I2.jpeg" alt="Nieve Andina"/>
                         <h2>Nieve Andina</h2>
-                        <p class="descripcion">Sandalias con un diseño que evoca la nieve y el hielo de las altas cumbres andinas. 
-                            Los tonos blancos y azules, junto con patrones de copos de nieve, transmiten una sensación de frescura y pureza invernal</p>
-                        <br><br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Sandalias con un diseño que evoca la nieve y el hielo de las altas cumbres andinas. Los tonos blancos y azules, junto con patrones de copos de nieve, transmiten una sensación de frescura y pureza invernal</p>
+                        <button class="add-to-cart" data-name="Nieve Andina" data-price="30.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgInvierno/I3.jpeg" alt=""/>
+                        <img src="ImgInvierno/I3.jpeg" alt="Noche Invernal"/>
                         <h2>Noche Invernal</h2>
-                        <p class="descripcion">Inspiradas en las noches frías de invierno, estas sandalias presentan un diseño con tonos oscuros y detalles 
-                            estrellados que evocan la tranquilidad y la belleza del cielo nocturno invernal</p>
-                        <br><br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Inspiradas en las noches frías de invierno, estas sandalias presentan un diseño con tonos oscuros y detalles estrellados que evocan la tranquilidad y la belleza del cielo nocturno invernal</p>
+                        <button class="add-to-cart" data-name="Noche Invernal" data-price="28.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgInvierno/I4.jpeg" alt=""/>
+                        <img src="ImgInvierno/I4.jpeg" alt="Lluvia de Invierno"/>
                         <h2>Lluvia de Invierno</h2>
-                        <p class="descripcion">Sandalias con un diseño que refleja las suaves lluvias de invierno en Perú. Los tonos azules y grises, 
-                            junto con detalles de gotas de agua, transmiten una sensación de frescura y renovación</p>
-                        <br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Sandalias con un diseño que refleja las suaves lluvias de invierno en Perú. Los tonos azules y grises, junto con detalles de gotas de agua, transmiten una sensación de frescura y renovación</p>
+                        <button class="add-to-cart" data-name="Lluvia de Invierno" data-price="22.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgInvierno/I5.jpeg" alt=""/>
+                        <img src="ImgInvierno/I5.jpeg" alt="Bruma Invernal"/>
                         <h2>Bruma Invernal</h2>
-                        <p class="descripcion">Sandalias con un diseño que captura la bruma y la frescura de las mañanas invernales en Perú. 
-                            Los tonos grises y azules, junto con patrones suaves, transmiten una sensación de tranquilidad y misterio</p>
-                        <br><br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Sandalias con un diseño que captura la bruma y la frescura de las mañanas invernales en Perú. Los tonos grises y azules, junto con patrones suaves, transmiten una sensación de tranquilidad y misterio</p>
+                        <button class="add-to-cart" data-name="Bruma Invernal" data-price="27.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgInvierno/I6.jpeg" alt=""/>
+                        <img src="ImgInvierno/I6.jpeg" alt="Caminos Nevados"/>
                         <h2>Caminos Nevados</h2>
-                        <p class="descripcion">Este diseño presenta un patrón que evoca los caminos nevados de los Andes. Los tonos blancos y grises, 
-                            junto con detalles de montañas y nieve, reflejan la belleza y la serenidad del invierno andino</p>
-                        <br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Este diseño presenta un patrón que evoca los caminos nevados de los Andes. Los tonos blancos y grises, junto con detalles de montañas y nieve, reflejan la belleza y la serenidad del invierno andino</p>
+                        <button class="add-to-cart" data-name="Caminos Nevados" data-price="35.00">Añadir al carrito</button>
                     </div>
+                </section>
+                <section id="carrito">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="cart-list"></ul>
+                    <p>Total: $<span id="total">0.00</span></p>
+                    <button id="clear-cart">Vaciar Carrito</button>
                 </section>
             </div>
         </main>
@@ -221,5 +218,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <p>Diseñado por <span class="editor">☑Jacintas</span></p>
             </div>
         </footer>
+        <script src="JS/carritocompras.js"></script>
     </body>
 </html>
