@@ -42,13 +42,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <img src="Img/Black and Cyan Blue Simple Game Animated Logo (3).gif" alt="Logo de la empresa" />
                 </div>
                 <div class="buscador">
-                    <form action="busqueda-productos">
-                        <input type="text">
-                        <input type="submit" value="Buscar">
-                    </form>
+                    
                     <a class="carrito-compras" href="#carrito" title="Carrito de compras">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count">0</span> <!-- Mostrará el número de productos en el carrito -->
+                    </a>
                 </div>
             </div>
         </header>
@@ -80,54 +78,52 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </aside>
                 <section class="productos">
                     <div class="producto">
-                        <img src="ImgPrimavera/P1.jpeg" alt=""/>
+                        <img src="ImgPrimavera/P1.jpeg" alt="Flor de los Andes"/>
                         <h2>Flor de los Andes</h2>
-                        <p class="descripcion">Sandalias con un diseño floral 
-                            inspirado en las flores silvestres de los Andes peruanos. 
-                            Los colores vibrantes y los patrones detallados evocan la belleza natural de la región</p>
-                        <br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion2">Sandalias con un diseño floral inspirado en las flores silvestres de los Andes peruanos. Los colores vibrantes y los patrones detallados evocan la belleza natural de la región.</p>
+                        <button class="add-to-cart" data-name="Flor de los Andes" data-price="35.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgPrimavera/P2.jpeg" alt=""/>
+                        <img src="ImgPrimavera/P2.jpeg" alt="Sol Incaico"/>
                         <h2>Sol Incaico</h2>
-                        <p class="descripcion">Este diseño presenta un patrón geométrico que recuerda al sol, un símbolo
-                            importante en la cultura Inca. Los tonos dorados y naranjas reflejan la calidez y la energía del sol peruano</p>
-                        <br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion2">Este diseño presenta un patrón geométrico que recuerda al sol, un símbolo importante en la cultura Inca. Los tonos dorados y naranjas reflejan la calidez y la energía del sol peruano.</p>
+                        <button class="add-to-cart" data-name="Sol Incaico" data-price="36.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgPrimavera/P3.jpeg" alt=""/>
+                        <img src="ImgPrimavera/P3.jpeg" alt="Mariposas de Primavera"/>
                         <h2>Mariposas de Primavera</h2>
-                        <p class="descripcion">Sandalias adornadas con mariposas coloridas, representando la llegada de la primavera en 
-                            los valles peruanos. Los colores pastel y los detalles delicados aportan un toque de frescura y alegría</p>
-                        <br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion2">Sandalias adornadas con mariposas coloridas, representando la llegada de la primavera en los valles peruanos. Los colores pastel y los detalles delicados aportan un toque de frescura y alegría.</p>
+                        <button class="add-to-cart" data-name="Mariposas de Primavera" data-price="34.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgPrimavera/P4.jpeg" alt=""/>
+                        <img src="ImgPrimavera/P4.jpeg" alt="Tesoros del Sol"/>
                         <h2>Tesoros del Sol</h2>
-                        <p class="descripcion">Representando los colores brillantes del Sol Peruano, estas sandalias muestran 
-                            patrones de hojas y animales exóticos. Los tonos verdes y marrones crean una conexión con la naturaleza</p>
-                        <br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion2">Representando los colores brillantes del Sol Peruano, estas sandalias muestran patrones de hojas y animales exóticos. Los tonos verdes y marrones crean una conexión con la naturaleza.</p>
+                        <button class="add-to-cart" data-name="Tesoros del Sol" data-price="37.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgPrimavera/P5.jpeg" alt=""/>
+                        <img src="ImgPrimavera/P5.jpeg" alt="Cultura Nazca"/>
                         <h2>Cultura Nazca</h2>
-                        <p class="descripcion">Diseño basado en las famosas líneas de Nazca, con patrones abstractos y misteriosos. 
-                            Los colores terrosos y las formas intrigantes capturan la esencia de este antiguo enigma peruano</p>
-                        <br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion2">Diseño basado en las famosas líneas de Nazca, con patrones abstractos y misteriosos. Los colores terrosos y las formas intrigantes capturan la esencia de este antiguo enigma peruano.</p>
+                        <button class="add-to-cart" data-name="Cultura Nazca" data-price="33.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgPrimavera/P6.jpeg" alt=""/>
+                        <img src="ImgPrimavera/P6.jpeg" alt="Olas de Máncora"/>
                         <h2>Olas de Máncora</h2>
-                        <p class="descripcion">Sandalias con un diseño que evoca las olas y la brisa marina de las playas de Máncora.
-                            Los tonos azules y turquesas transmiten una sensación de tranquilidad y relajación</p>
-                        <br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion2">Sandalias con un diseño que evoca las olas y la brisa marina de las playas de Máncora. Los tonos azules y turquesas transmiten una sensación de tranquilidad y relajación.</p>
+                        <button class="add-to-cart" data-name="Olas de Máncora" data-price="38.00">Añadir al carrito</button>
                     </div>
+                </section>
+                <section id="carrito">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="cart-list"></ul>
+                    <p>Total: $<span id="total">0.00</span></p>
+                    <button id="clear-cart">Vaciar Carrito</button>
                 </section>
             </div>
         </main>
@@ -224,5 +220,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <p>Diseñado por <span class="editor">☑Jacintas</span></p>
             </div>
         </footer>
+        <script src="JS/carritocompras.js"></script>
     </body>
 </html> 

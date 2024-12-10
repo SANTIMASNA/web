@@ -38,13 +38,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <img src="Img/Black and Cyan Blue Simple Game Animated Logo (3).gif" alt="Logo de la empresa" />
                 </div>
                 <div class="buscador">
-                    <form action="busqueda-productos">
-                        <input type="text">
-                        <input type="submit" value="Buscar">
-                    </form>
                     
-                    <a class="carrito-compras" href="#carrito" title="Carrito de compras">
+
+                   <a class="carrito-compras" href="#carrito" title="Carrito de compras">
                         <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count">0</span> <!-- Mostrará el número de productos en el carrito -->
                     </a>
                     
                 </div>
@@ -78,53 +76,58 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </aside>
                 <section class="productos">
                     <div class="producto">
-                        <img src="ImgOtono/O1.jpeg" alt=""/>
+                        <img src="ImgOtono/O1.jpeg" alt="Hojas de Otoño"/>
                         <h2>Hojas de Otoño</h2>
                         <p class="descripcion">Sandalias con un diseño inspirado en las hojas caídas de los árboles durante el otoño. Los tonos marrones, 
                             naranjas y dorados, junto con patrones de hojas, evocan la calidez y la belleza de la temporada otoñal en Perú</p>
-                        <br>
-                        <button>Añadir al carrito</button>
+                        <button class="add-to-cart" data-name="Hojas de Otoño" data-price="24.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgOtono/O2.jpeg" alt=""/>
+                        <img src="ImgOtono/O2.jpeg" alt="Cosecha Andina"/>
                         <h2>Cosecha Andina</h2>
                         <p class="descripcion">Este diseño presenta un patrón que celebra la época de cosecha en los Andes. Los colores terrosos y los 
                             detalles de granos y plantas reflejan la abundancia y la conexión con la tierra</p>
-                        <br><br><br><br>
-                        <button>Añadir al carrito</button>
+                        <button class="add-to-cart" data-name="Cosecha Andina" data-price="28.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgOtono/O3.jpeg" alt=""/>
+                        <img src="ImgOtono/O3.jpeg" alt="Bruma de Montaña"/>
                         <h2>Bruma de Montaña</h2>
-                        <p class="descripcion">Sandalias con un diseño que captura la bruma y la frescura de las montañas peruanas en otoño. 
-                            Los tonos grises y verdes, junto con patrones suaves, transmiten una sensación de tranquilidad y misterio</p>
-                        <br><br><br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Sandalias con un diseño que captura la bruma y la frescura de las montañas peruanas en otoño. Los tonos grises y verdes, 
+                            junto con patrones suaves, transmiten una sensación de tranquilidad y misterio</p>
+                        <button class="add-to-cart" data-name="Bruma de Montaña" data-price="27.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgOtono/O4.jpeg" alt=""/>
+                        <img src="ImgOtono/O4.jpeg" alt="Lluvia de Otoño"/>
                         <h2>Lluvia de Otoño</h2>
                         <p class="descripcion">Este diseño presenta un patrón que refleja las suaves lluvias de otoño en Perú. Los tonos blancos y grises, 
                             junto con detalles de gotas de agua, transmiten una sensación de frescura y renovación</p>
-                        <br><br><br>
-                        <button>Añadir al carrito</button>
+                        <button class="add-to-cart" data-name="Lluvia de Otoño" data-price="22.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgOtono/O5.jpeg" alt=""/>
+                        <img src="ImgOtono/O5.jpeg" alt="Festival de la Vendimia"/>
                         <h2>Festival de la Vendimia</h2>
-                        <p class="descripcion">Inspiradas en las festividades de la vendimia, estas sandalias presentan un vibrante mosaico de 
-                            colores y formas que celebran la recolección de uvas. Los tonos púrpura y verde reflejan la alegría de la temporada de cosecha</p>
-                        <br>
-                        <button>Añadir al carrito</button>
+                        <p class="descripcion">Inspiradas en las festividades de la vendimia, estas sandalias presentan un vibrante mosaico de colores y formas 
+                            que celebran la recolección de uvas. Los tonos púrpura y verde reflejan la alegría de la temporada de cosecha</p>
+                        <button class="add-to-cart" data-name="Festival de la Vendimia" data-price="29.00">Añadir al carrito</button>
                     </div>
+
                     <div class="producto">
-                        <img src="ImgOtono/O6.jpeg" alt=""/>
+                        <img src="ImgOtono/O6.jpeg" alt="Caminos de Otoño"/>
                         <h2>Caminos de Otoño</h2>
                         <p class="descripcion">Sandalias con un diseño que evoca los senderos cubiertos de hojas en los bosques peruanos. Los tonos marrones y ocres, 
                             junto con patrones de caminos y hojas, capturan la esencia de un paseo otoñal</p>
-                        <br><br><br>
-                        <button>Añadir al carrito</button>
+                        <button class="add-to-cart" data-name="Caminos de Otoño" data-price="26.00">Añadir al carrito</button>
                     </div>
+                </section>
+                <section id="carrito">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="cart-list"></ul>
+                    <p>Total: $<span id="total">0.00</span></p>
+                    <button id="clear-cart">Vaciar Carrito</button>
                 </section>
             </div>
         </main>
@@ -221,5 +224,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <p>Diseñado por <span class="editor">☑Jacintas</span></p>
             </div>
         </footer>
+        <script src="JS/carritocompras.js"></script>
     </body>
 </html>
